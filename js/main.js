@@ -25,7 +25,7 @@ elForm.addEventListener('submit', (e) =>{
   
   let li = document.createElement('li');
   listGroup.append(li);
-  li.className = 'list-group-item';
+  li.className = `list-group-item ${SelectBtn.value}`;
 
   li.innerHTML = `
   <p class="mb-2">First name: ${fname} </p>
@@ -35,25 +35,35 @@ elForm.addEventListener('submit', (e) =>{
 
   listGroup.style.background = '#fff';
   li.style.padding = '15px'; 
+})
 
-  friendBtn.addEventListener('click', (e) =>{
-    // let friendItem = document.createElement('li');
-    // friendItem.className = 'list-group-item';
-    // let newlist = document.createElement('ul');
-    // newlist.append = friendItem;
-    
-    
+friendBtn.addEventListener('click', () =>{
+  let sortFriend = document.querySelectorAll('li');
+
   
-  })
+  for (let i = 0; i < sortFriend.length; i++){
+    if (sortFriend[i].classList.contains('friend')){
+      sortFriend[i].style.display = 'block';
+    }
+    else{
+      sortFriend[i].style.display = 'none';
+    }
+  }
 })
 
 
-
-
-
-
-
-
+familyBtn.addEventListener('click', () =>{
+  let sortFriend = document.querySelectorAll('li');
+  
+  for (let i = 0; i < sortFriend.length; i++){
+    if (sortFriend[i].classList.contains('family')){
+      sortFriend[i].style.display = 'block';
+    }
+    else{
+      sortFriend[i].style.display = 'none';
+    }
+  }
+})
 
 
 
