@@ -7,9 +7,62 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #f4f4f4;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  padding: 70px 0;
 }
+.fname-input{
+  width: 400px;
+  margin-bottom: 25px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form-select{
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.all-btn{
+  background-color: #fff;
+}
+.list-group-item{
+  position: relative;
+  padding: 15px;
+}
+.list-group{
+  list-style: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.triangle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  display: inline-block;
+  top: -6px;
+  left: 20px;
+  transform: rotate(45deg);
 
+}
+p {
+  font-size: 20px;
+  font-weight: 500;
+}
+button {
+  padding: 8px 20px !important;
+}
+.white {
+  color: #fff;
+}
+.call-btn{
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+.all-btn{
+  border: none;
+  border-radius: 5px;
+}
